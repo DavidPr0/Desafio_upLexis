@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreArtigos;
 use App\Models\Artigos;
+
 class CapturarController extends Controller
 {
     /**
@@ -123,7 +124,6 @@ class CapturarController extends Controller
         }
 
         return redirect()->route('home')->with('error', 'Houve um erro ao deletar o artigo');
-
     }
 
     private function getArtigos($dado)

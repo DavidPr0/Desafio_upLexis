@@ -13,7 +13,7 @@ class ArtigosController extends Controller
      */
     public function index()
     {
-        dd('foi');
+        //
     }
 
     /**

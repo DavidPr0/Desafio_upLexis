@@ -29,6 +29,5 @@ class HomeController extends Controller
         $artigos = Artigos::where('id_usuario', '=', Auth::user()->id)->paginate(10);
 
         return view('home', ['artigos' => $artigos]);
-        // return view('home');
     }
 }

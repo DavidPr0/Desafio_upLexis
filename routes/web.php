@@ -19,9 +19,9 @@ Route::get('/', function () {
     return redirect('login');
 });
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::get('/listarArtigos', [App\Http\Controllers\ArtigosController::class, 'index'])->name('home');
 
 Route::get('/capturar', [App\Http\Controllers\CapturarController::class, 'index'])->name('capturar');
 
 Route::post('/salvarArtigo', [App\Http\Controllers\CapturarController::class, 'store'])->name('salvarArtigo');
-Route::post('/removerArtigo/{id}', [App\Http\Controllers\CapturarController::class, 'destroy'])->name('capturar.destroy');
+Route::post('/removerArtigo/{id}', [App\Http\Controllers\CapturarController::class, 'destroy'])
+    ->name('capturar.destroy');
