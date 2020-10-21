@@ -28,3 +28,5 @@ Desafio para empresa UpLexis
     
 - 3) Após instalar as dependências utilize "npm install" para que seja instalado todas as dependências do Webpack. Em seguida utilize "npm run dev" para executar o Webpack.
 - 4) Para concluir, execute o camando "php artisan migrate --seed" no terminal para que todas as tabelas sejam criadas e populadas.
+
+## :handshake:
